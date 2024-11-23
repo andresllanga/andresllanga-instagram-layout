@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Post</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .post {
+            width: 400px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .post-header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .post-header img {
+            width: 40px;
+            height: 40px;
+        }
+        .post-header div {
+            margin-left: 10px;
+        }
+        .post-header .title {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .post-header .subtitle {
+            font-size: 12px;
+            color: #666;
+        }
+        .post-header .dots {
+            margin-left: auto;
+            font-size: 20px;
+            color: #999;
+            cursor: pointer;
+        }
+        .post-image img {
+            width: 100%;
+            height: auto;
+        }
+        .post-actions {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 15px;
+        }
+        .post-actions i {
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .post-likes {
+            padding: 0 15px;
+            font-size: 13px;
+            color: #666;
+        }
+        .post-description {
+            padding: 0 15px 15px;
+            font-size: 14px;
+            color: #444;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="post">
+        <!-- Cabecera -->
+        <div class="post-header">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROvXr1-LOG2YouLgAVnfVpQC56RA6nPqnKig&s" alt="HTML5 Logo">
+            <div>
+                <p class="title">HTML5</p>
+                <p class="subtitle">Rigoberto</p>
+            </div>
+            <div class="dots">...</div>
+        </div>
+        <!-- Imagen Principal -->
+        <div class="post-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Cuesta_del_obispo_01.jpg/640px-Cuesta_del_obispo_01.jpg" alt="Paisaje">
+        </div>
+        <!-- Acciones -->
+        <div class="post-actions">
+            <img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/instagram-3814047_960_720.png" width="30px" height="30px" alt="corazon">
+            <img src="https://cdn.iconscout.com/icon/free/png-256/free-comentario-3244516-2701887.png?f=webp" width="30px" height="30px" alt="comentarios">
+            <img src="https://cdn.icon-icons.com/icons2/1875/PNG/512/send_120237.png" width="30px" height="30px" alt="avion">
+            <img src="https://cdn-icons-png.flaticon.com/512/5662/5662990.png" width="30px" height="30px" style="margin-left: auto;" alt="guardar">
+        </div>
+        <!-- Likes -->
+        <p class="post-likes">Liked by <b>4GeeksAcademy</b>, html5, Web and 100,000 others</p>
+        <!-- Descripción -->
+        <p class="post-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        </p>
+    </div>
+</body>
+</html>
